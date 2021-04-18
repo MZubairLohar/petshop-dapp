@@ -12,13 +12,13 @@ export const initWeb3 = createAsyncThunk('InitWeb3', async (_, thunkAPI) => {
       await Web3.givenProvider.request({ method: 'eth_requestAccounts' });
       console.log(web3);
       const networkId = await web3.eth.net.getId();
-      // console.log('networkId = ', networkId);
+      console.log('networkId = ', networkId);
       const network = Adoption.networks[networkId];
-      // console.log('network = ', network);
+      console.log('network = ', network);
       const contract = new web3.eth.Contract(Adoption.abi, network.address);
-      // console.log('contract = ', contract);
+      console.log('contract = ', contract);
       const addresses = await web3.eth.getAccounts();
-      // console.log('addresses = ', addresses);
+      console.log('addresses = ', addresses);
 
       return {
         web3,
@@ -37,7 +37,7 @@ export const initWeb3 = createAsyncThunk('InitWeb3', async (_, thunkAPI) => {
       console.log('Error in loading web3');
     }
   } catch (error) {
-    console.log('error >>> ', error);
+    console.log('error = ', error);
   }
 });
 

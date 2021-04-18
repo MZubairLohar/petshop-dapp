@@ -10,15 +10,15 @@ import './App.css';
 const App = () => {
   const dispatch = useDispatch();
   const web3State = useSelector((state) => state.initWeb3Reducer);
-  // console.log('web3State >>> ', web3State);
+  // console.log('web3State = ', web3State);
   const adoptState = useSelector((state) => state.adoptReducer);
-  // console.log('adoptState >>> ', adoptState);
+  // console.log('adoptState = ', adoptState);
 
   const handleNetwork = (networkId) => {
     if (networkId === 3) {
       return 'ropsten testnet';
-    } else if (networkId === 4) {
-      return 'rinkeby testnet';
+    // } else if (networkId === 4) {
+    //   return 'rinkeby testnet';
     } else {
       return 'please connect to rinkeby or ropsten testnet';
     }
