@@ -40,7 +40,7 @@ const App = () => {
 
   return (
     <Container className="my-3">
-      <h1 className="text-center my-4">PETSHOP DAPP</h1>
+      <h1 className="text-center my-4">PETSHOP DAPP Assignment</h1>
       <p className="text-center">
         Network Connected: <strong>{handleNetwork(web3State.networkId)}</strong>
       </p>
