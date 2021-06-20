@@ -4,11 +4,13 @@
 }
 .col{
     display: inline-block;
-    padding: 20px;
+    padding: 2rem;
     align-items: center;
     text-align: center;
 }
 .pics{
+    align-items: center;
+    padding-top: 1rem;
     border: 1px solid black;
 }
 
@@ -16,6 +18,8 @@
     display: inline-block;
     padding: 20px;
     width: 200px;
+    height: 200px;
+    
 }
 
 

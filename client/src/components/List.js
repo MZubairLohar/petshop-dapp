@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import petlistJson from './pets.json';
 import './list.css';
-
+import Adopters from './Adopters'
 
 const List = () => {
 
@@ -17,6 +17,8 @@ const List = () => {
         <div >
             <div className='head'>
                 <strong>your Address :</strong>  {address}
+                <br/>
+                <Adopters />
             </div>
             <div >
             {
