@@ -6,6 +6,7 @@ import List from './components/List';
 
 
 function App() {
+  // eslint-disable-next-line
   const dispatch = useDispatch();
   
   useSelector((state)=>{
@@ -13,13 +14,15 @@ function App() {
     return state.adoptReducer.web3;
   });
   
+  // eslint-disable-next-line
   useEffect(() => {
     dispatch(initWeb3());
   },[])
   
   return (
     <div className="app">
-      Hello main page 
+        <h1>React Dapp Pet shop</h1> 
+        <br/>
       <List />
     </div>
     );

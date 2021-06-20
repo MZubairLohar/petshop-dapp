@@ -1,0 +1,34 @@
+.head{
+    margin-top: 0;
+    text-align: center;
+}
+.col{
+    display: inline-block;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+.pics{
+    border: 1px solid black;
+}
+
+.pics > img{
+    display: inline-block;
+    padding: 20px;
+    width: 200px;
+}
+
+
+.pics >button{
+    border: none;
+    text-align: center;
+    background-color: rgb(96, 190, 159);
+    border-radius: 20px;
+}
+.pics >button:hover{
+    border: none;
+    text-align: center;
+    background-color: rgb(42, 80, 67);
+    
+}
+

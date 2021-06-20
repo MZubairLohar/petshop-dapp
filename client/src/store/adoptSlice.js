@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import Web3 from 'web3';
+import Web3 from "web3";
 import Adoption from '../contracts/Adoption.json';
 
 
@@ -11,10 +11,11 @@ export const initWeb3 = createAsyncThunk(
             const web3 = await new Web3(Web3.givenProvider);
             await Web3.givenProvider.enable();
             const networkId = await web3.eth.net.getId();
+            
             const network = await Adoption.networks[networkId];
             const contract = await new web3.eth.Contract(Adoption.abi, network.address);
             const addresses = await web3.eth.getAccounts();
-
+                // console.log(networkId);
             return{
                 web3,
                 address : addresses[0],
