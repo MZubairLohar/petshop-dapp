@@ -13,7 +13,7 @@ const Adopters = () => {
             <div >
                 {
                     adopterList.map((list,index)=>(
-                            list!='0x0000000000000000000000000000000000000000'?<div>index = {index} {list}</div>:null    
+                            list!=='0x0000000000000000000000000000000000000000'?<div key={index}>index = {index} {list}</div>:null    
                         
                     ))
                 }

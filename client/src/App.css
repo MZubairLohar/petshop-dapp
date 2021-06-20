@@ -3,19 +3,20 @@
 
 }
 .header{
-    align-items: center;
+    text-align: center;
     background-color:rgb(27, 27, 27);
     color : rgb(89, 133, 153);
     padding: 9px;
-    align-items: center;
     display: flex;
     flex: 1;
 }
 .header >img{
+    padding-left: 40%;
+    text-align: center;
     visibility: inherit;
     height: 50px;
     width: 50px;
     align-items: center;
-    padding-left: 32rem;
+    padding-left: auto;
     padding-right: 1rem;
 }
